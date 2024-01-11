@@ -1,0 +1,130 @@
+:root {
+    background: linear-gradient(-0.45turn, darkcyan, hotpink, dodgerblue, steelblue, greenyellow) no-repeat fixed;
+    --text-color: black;
+    font-family: sans-serif, "Al Nile", Tahoma;
+}
+
+* {
+    margin: 0;
+    padding: 0;
+}
+
+.container {
+    display: flex;
+}
+
+#image-text {
+    position: absolute;
+    top: 25%;
+    left: 0;
+    z-index: 1;
+    color: hotpink;
+    font-size: 3.5rem;
+    background: rgb(0, 0, 0, 0.2);
+    text-align: center;
+    width: 50vw;
+    height: 72px;
+}
+
+img {
+    width: 50vw;
+    height: 100vh;
+    position: relative;
+    text-align: center;
+}
+
+p {
+    font-size: 1.5rem;
+}
+
+#form-border {
+    color: var(--text-color);
+    background: rgba(255, 255, 255, 0.19);
+    border: 1px solid rgba(255, 255, 255, 0.32);
+    border-radius: 16px;
+    box-shadow: 0 4px 30px rgba(0, 0, 0, 0.1);
+    backdrop-filter: blur(4px);
+    margin: 12px;
+    padding: 12px;
+}
+
+.input-form {
+    display: flex;
+    justify-content: space-between;
+    padding: 12px;
+    gap: 4px;
+}
+
+#first-name, #last-name, #email, #phone, #confirm-password, #password {
+    width: min(300px, 60vw);
+    height: 36px;
+    background-color: transparent;
+    border-radius: 8px;
+    border: 1px solid whitesmoke;
+    font-size: 24px;
+    font-weight: normal;
+    color: whitesmoke;
+    padding-left: 4px;
+}
+
+#last-name:focus, #first-name:focus, #email:focus, #password:focus, #confirm-password:focus, #phone:focus {
+    border: 1px solid lightblue;
+    background-color: transparent;
+    box-shadow: 1px 0 0 0 greenyellow;
+    outline: none;
+}
+
+.text {
+    font-size: 1.25rem;
+    color: whitesmoke;
+    margin-bottom: 12px;
+    padding: 12px;
+    overflow: visible;
+}
+
+.text-1 {
+    margin-top: 15vh;
+}
+
+#text-3 {
+    padding: 12px;
+}
+
+input, label {
+    display: block;
+}
+
+button {
+    background: transparent;
+    color: whitesmoke;
+    font-size: 1.125rem;
+    padding: 12px;
+    margin: 12px;
+    border-radius: 12px;
+    width: 256px;
+    height: 48px;
+    border: 1px solid whitesmoke;
+}
+
+button:hover {
+    outline: none;
+    color: black;
+    background: whitesmoke;
+    cursor: pointer;
+}
+
+#text-4 {
+    color: whitesmoke;
+    padding: 12px;
+    font-weight: bold;
+    font-size: 1.1rem;
+}
+
+a {
+    color: whitesmoke;
+    text-underline: none;
+}
+
+input:invalid {
+    border-color: red;
+}

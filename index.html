@@ -1,0 +1,62 @@
+<!doctype html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport"
+          content="width=device-width, user-scalable=no, initial-scale=1.0, maximum-scale=1.0, minimum-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <title>Sign up | ZSpacer</title>
+    <link rel="stylesheet" href="./style.css">
+    <link rel="shortcut icon" href="./images/space.jpg" type="image/x-icon">
+</head>
+<body>
+<div class="container">
+    <div class="image">
+        <p id="image-text">ZSpacer</p>
+        <img src="./images/space.jpg" alt="snow image">
+    </div>
+    <div class="second-half">
+        <p class="text text-1">This is not a <em>real</em> online service! You know you need something like this in your life to help you
+            realize your deepest dreams. Sign up now to get started.</p>
+        <p class="text text-2">You know you want to.</p>
+        <form action="#" method="post" autocomplete="off">
+            <div id="form-border">
+                <p id="text-3">Let's do this!</p>
+                <section class="input-form">
+                    <div>
+                        <label for="first-name" class="firstname">First Name</label>
+                        <input type="text" name="firstName" id="first-name" class="firstname" minlength="3" maxlength="32" required>
+                    </div>
+                    <div>
+                        <label for="last-name" id="lname">Last Name</label>
+                        <input type="text" name="lastName" id="last-name" minlength="3" maxlength="32" required>
+                    </div>
+                </section>
+                <section class="input-form">
+                    <div>
+                        <label for="email">Email</label>
+                        <input type="email" name="email" id="email">
+                    </div>
+                    <div>
+                        <label for="phone">Phone Number</label>
+                        <input type="tel" name="phone" id="phone" min="1111111111" max="9999999999">
+                    </div>
+                </section>
+                <section class="input-form">
+                    <div>
+                        <label for="password">Password</label>
+                        <input type="password" name="password" id="password">
+                    </div>
+                    <div>
+                        <label for="confirm-password">Confirm Password</label>
+                        <input type="password" name="confirmPassword" id="confirm-password">
+                    </div>
+                </section>
+            </div>
+            <button type="submit">Create Account</button>
+        </form>
+        <p id="text-4">Already have an account? <a href="#">Log In</a></p>
+    </div>
+</div>
+</body>
+</html>
